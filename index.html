@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		body{
+			/* display: flex; */
+			display: flex;
+    		flex-direction: column;
+		}
+		header{
+			display: flex;
+    		justify-content: center;
+		}
+		main{
+			display: flex;
+			justify-content: space-around;
+			align-content: space-around;
+			align-items: center;
+		}
+		#rightDiv{
+			max-height: 300px;
+			overflow-y: scroll;
+		}
+	</style>
+	
+	<title>Luck checker</title>
+</head>
+<body>
+	<header >
+		<table id="player"></table>
+	</header>
+	<main>
+		<section>
+			<p id="coinText">Coin: 0</p>
+			<input id="coinButton" type="button" value="Toss coin">
+		</section>
+		
+		<aside>
+			<div id="highscore"></div>
+			<input id="refreshBtn" type="button" value="Refresh">
+		</aside>
+	</main>
+	
+	<script src="highscore.js"></script>
+	<script src="game.js"></script>
+</body>
+</html>
